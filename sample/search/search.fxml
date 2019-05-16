@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" style="-fx-background-color: #f2f1f8;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.search.SearchController">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="109.0" prefHeight="200.0" prefWidth="670.0" style="-fx-background-color: white; -fx-background-radius: 8px;">
+         <children>
+            <Label layoutX="318.0" layoutY="69.0" prefHeight="20.0" prefWidth="126.0" style="-fx-font-family: corbel; -fx-font-size: 9px;" text="Number of persons">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+            <Label layoutX="318.0" layoutY="117.0" prefHeight="20.0" prefWidth="126.0" style="-fx-font-family: corbel; -fx-font-size: 9px;" text="Destination">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="search" layoutX="565.0" layoutY="147.0" mnemonicParsing="false" onAction="#searchHousesEvent" prefHeight="36.0" prefWidth="66.0" style="-fx-font-family: corbel; -fx-background-radius: 7px; -fx-font-size: 12px; -fx-background-color: white; -fx-border-color: darkgrey; -fx-border-radius: 5px" text="Search" textAlignment="CENTER" textOverrun="CLIP" />
+            <ImageView fitHeight="210.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/dom0.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="318.0" layoutY="22.0" prefHeight="20.0" prefWidth="126.0" style="-fx-font-family: corbel; -fx-font-size: 9px;" text="Check in ">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="checkinDate" editable="false" layoutX="318.0" layoutY="43.0" prefHeight="26.0" prefWidth="149.0" />
+            <DatePicker fx:id="checkoutDate" editable="false" layoutX="483.0" layoutY="43.0" prefHeight="26.0" prefWidth="149.0" />
+            <Spinner fx:id="numberPersons" layoutX="318.0" layoutY="92.0" />
+            <ChoiceBox fx:id="destination" layoutX="318.0" layoutY="140.0" prefHeight="25.0" prefWidth="149.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Kosice" />
+                     <String fx:value="Presov" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Label layoutX="483.0" layoutY="22.0" prefHeight="20.0" prefWidth="126.0" style="-fx-font-family: corbel; -fx-font-size: 9px;" text="Check out">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="290.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: corbel;" text="\@COSMIC KIO" />
+      <ImageView fitHeight="71.0" fitWidth="118.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

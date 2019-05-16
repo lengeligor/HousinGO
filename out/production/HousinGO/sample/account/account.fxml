@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="714.0" style="-fx-background-color: #f2f1f8;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.account.AccountController">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="460.0" prefHeight="460.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="135.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="373.0" AnchorPane.leftAnchor="43.940887451171875" AnchorPane.rightAnchor="538.0591125488281" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="44.0" layoutY="83.0" prefHeight="322.0" prefWidth="626.0" style="-fx-background-color: white; -fx-background-radius: 7px;" AnchorPane.bottomAnchor="43.60000000000002" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="43.60000000000002" AnchorPane.topAnchor="83.0">
+               <effect>
+                  <Blend />
+               </effect>
+               <children>
+                  <AnchorPane layoutY="-1.0" prefHeight="322.0" prefWidth="205.0" style="-fx-background-color: #6C9DCB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutY="7.0" prefHeight="308.0" prefWidth="206.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <children>
+                              <ImageView fitHeight="92.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="216.39999999999998" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="54.599999999999994" AnchorPane.topAnchor="14.0">
+                                 <image>
+                                    <Image url="@../img/ninja-512.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="username_account" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="username" textAlignment="CENTER" wrappingWidth="97.36083984375" AnchorPane.bottomAnchor="189.01669921874998" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="52.239160156249994" AnchorPane.topAnchor="112.38330078125">
+                                 <font>
+                                    <Font name="Corbel Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="email_account" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="xyzzzzzzz@gmail.com" textAlignment="CENTER" wrappingWidth="172.59999084472656" AnchorPane.bottomAnchor="175.06748046874998" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="15.000009155273432" AnchorPane.topAnchor="134.33251953125">
+                                 <font>
+                                    <Font name="Corbel" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="71.59999084472656" startX="-100.0" stroke="WHITE" AnchorPane.bottomAnchor="160.89999999999998" AnchorPane.leftAnchor="17.5" AnchorPane.rightAnchor="15.500009155273432" AnchorPane.topAnchor="160.5" />
+                              <Button fx:id="search" layoutX="55.0" layoutY="185.0" mnemonicParsing="false" onAction="#asearch_Event" prefHeight="27.0" prefWidth="89.0" style="-fx-background-color: #6C9DCB;" text="EXPLORE" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.400000000000006" AnchorPane.topAnchor="185.0" />
+                              <Button fx:id="addhouseButton" layoutX="44.0" layoutY="219.0" mnemonicParsing="false" onAction="#add_House_Event" prefHeight="27.0" prefWidth="97.0" style="-fx-background-color: #6C9DCB;" text="ADD HOUSE" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="219.0" />
+                              <Button fx:id="logout" layoutX="43.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#log_out_Event" style="-fx-background-color: #6C9DCB;" text="LOG OUT" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="261.0">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+                  <Text layoutX="220.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My booking" wrappingWidth="116.0000037252903" AnchorPane.leftAnchor="219.2000037252903" AnchorPane.rightAnchor="290.3999962747097" AnchorPane.topAnchor="22.6142578125">
+                     <font>
+                        <Font name="Corbel Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="1.5928313732147217" endY="-1.5932321548461914E-4" layoutX="317.0" layoutY="197.0" startX="-100.0" AnchorPane.bottomAnchor="272.9" AnchorPane.leftAnchor="216.10002441406255" AnchorPane.rightAnchor="28.099963378906182" AnchorPane.topAnchor="48.5" />
+                  <Line endX="-91.40711975097656" endY="-1389.083984375" layoutX="308.0" layoutY="1596.0" startX="-3.3929290771484375" startY="-1389.083984375" AnchorPane.bottomAnchor="114.98398437499998" AnchorPane.leftAnchor="216.09288024902344" AnchorPane.rightAnchor="321.2929290771484" AnchorPane.topAnchor="206.416015625" />
+                  <ListView fx:id="listview" layoutX="216.0" layoutY="216.0" prefHeight="92.0" prefWidth="393.0" style="-fx-background-radius: 6px;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="216.0">
+                     <contextMenu>
+                        <ContextMenu fx:id="contextMenu">
+                          <items>
+                            <MenuItem fx:id="deleteMyHouse" mnemonicParsing="false" text="Delete" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </ListView>
+                  <ListView fx:id="listview1" layoutX="216.0" layoutY="61.0" prefHeight="118.0" prefWidth="393.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="17.0">
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem fx:id="discardBooking" mnemonicParsing="false" text="Discard" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu></ListView>
+                  <Text layoutX="219.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My houses" wrappingWidth="116.0000037252903" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="291.3999962747097" AnchorPane.topAnchor="184.0">
+                     <font>
+                        <Font name="Corbel Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

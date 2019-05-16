@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="392.0" style="-fx-border-color: #D6E7D1; -fx-background-color: white; -fx-background-radius: 7px; -fx-border-radius: 8px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="obrazokDomu" fx:id="obrazokDomu" fitHeight="99.0" fitWidth="109.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="8.462997436523438" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="8.0">
+         <image>
+            <Image url="@img/dom3.jpg" />
+         </image></ImageView>
+      <Label fx:id="nazovDomu" layoutX="114.0" layoutY="9.0" prefHeight="22.0" prefWidth="281.0" text="Nazov Domu">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="popisDomu" layoutX="121.0" layoutY="43.0" prefHeight="20.0" prefWidth="264.0" text="Popis domu" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="42.0" />
+      <Label fx:id="majitel" layoutX="120.0" layoutY="77.0" prefHeight="20.0" prefWidth="157.0" text="Majiteľ" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="76.0" />
+      <Label fx:id="kapacita" layoutX="115.0" layoutY="25.0" prefHeight="11.0" prefWidth="63.0" text="Kapacita" textFill="#736f6f" />
+      <Label fx:id="lokalita" layoutX="120.0" layoutY="59.0" prefHeight="20.0" prefWidth="262.0" text="Lokalita" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="58.0" />
+      <Label fx:id="cena" layoutX="280.0" layoutY="74.0" prefHeight="23.0" prefWidth="109.0" text="Cena" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="74.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
