@@ -14,7 +14,7 @@ public class Registration extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("login/sample.fxml"));
         primaryStage.setTitle("HousinGO");
         primaryStage.getIcons().add(new javafx.scene.image.Image("sample/img/icon.png"));
-        primaryStage.setScene(new Scene(root, 720, 460));
+        primaryStage.setScene(new Scene(root, primaryStage.getWidth(), primaryStage.getHeight()));
         primaryStage.setResizable(true);
         primaryStage.setMinHeight(480);
         primaryStage.setMinWidth(720);

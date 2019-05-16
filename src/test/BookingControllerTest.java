@@ -1,11 +1,12 @@
-package sample.booking;
+package test;
 
 import org.junit.jupiter.api.Test;
 import sample.Functions;
+import sample.booking.BookingController;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BookingControllerTest {
 
@@ -19,4 +20,5 @@ class BookingControllerTest {
         LocalDate dateend = LocalDate.of(2019, 5, 20);
         assertEquals(controller.calculatePrice(datestart, dateend, 200.0), 600.0);
     }
+
 }

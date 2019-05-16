@@ -77,7 +77,7 @@ public class RegistrationController {
                bw.write(addUser);
                bw.newLine();
                bw.close();
-               user = new User(username.getText(),pass.getText(),email.getText(),false);
+               user = new User(username.getText(),pass.getText(),email.getText());
                openNewWindow();
            }catch (IOException e){
                e.printStackTrace();
@@ -110,7 +110,7 @@ public class RegistrationController {
                     String []udaje = line.split(";");
                     if (udaje[0].equals(inputLogin.getText())&&udaje[1].equals(inputPassword.getText())){
                         wrUser = true;
-                        user = new User(inputLogin.getText(),inputPassword.getText(),udaje[2],false);
+                        user = new User(inputLogin.getText(),inputPassword.getText(),udaje[2]);
                         openNewWindow();
                         return;
                     }

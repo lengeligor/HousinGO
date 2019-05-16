@@ -5,15 +5,13 @@ public class User {
     private String username;
     private String pass;
     private String mail;
-    private boolean typeOfAccount;
 
     public User(){}
 
-    public User (String username, String pass, String mail, boolean typeOfAccount){
+    public User (String username, String pass, String mail){
         this.username = username;
         this.pass = pass;
         this.mail = mail;
-        this.typeOfAccount =typeOfAccount;
     }
 
     public String getUsername() {
@@ -40,11 +38,5 @@ public class User {
         this.mail = mail;
     }
 
-    public boolean isTypeOfAccount() {
-        return typeOfAccount;
-    }
 
-    public void setTypeOfAccount(boolean typeOfAccount) {
-        this.typeOfAccount = typeOfAccount;
-    }
 }

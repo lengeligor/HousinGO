@@ -217,8 +217,8 @@ public class BookingController extends Controller implements Initializable {
         return calculatedPrice;
     }
 
-    private boolean vipUser() {
-        boolean x = false;
+    public boolean vipUser() {
+         boolean x = false;
         try {
             BufferedReader br = new BufferedReader(new FileReader("listOfHouses"));
             String line = br.readLine();

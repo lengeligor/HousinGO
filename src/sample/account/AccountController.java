@@ -39,10 +39,8 @@ public class AccountController extends Controller implements Initializable {
     private Button addhouseButton;
 
     @FXML
-    private Button home;
-
-    @FXML
     private Button search;
+
     @FXML
     private ListView listview;
 

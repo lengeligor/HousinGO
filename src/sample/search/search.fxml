@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" style="-fx-background-color: #f2f1f8;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.search.SearchController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" style="-fx-background-color: #f2f1f8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.search.SearchController">
    <children>
       <AnchorPane layoutX="15.0" layoutY="130.0" prefHeight="284.0" prefWidth="670.0" style="-fx-background-color: white; -fx-background-radius: 8px;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="130.0">
          <children>
@@ -26,7 +26,6 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <Button fx:id="search" layoutX="564.0" layoutY="220.0" mnemonicParsing="false" onAction="#searchHousesEvent" prefHeight="39.0" prefWidth="72.0" style="-fx-font-family: corbel; -fx-background-radius: 7px; -fx-font-size: 12px; -fx-background-color: white; -fx-border-color: darkgrey; -fx-border-radius: 5px" text="Search" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="220.0" />
             <ImageView fitHeight="220.0" fitWidth="316.0" layoutX="22.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="352.2622985839844" AnchorPane.topAnchor="19.0">
                <image>
                   <Image url="@../img/dom0.jpg" />
@@ -48,6 +47,7 @@
                   </FXCollections>
                </items>
             </ChoiceBox>
+            <Button fx:id="search" layoutX="564.0" layoutY="220.0" mnemonicParsing="false" onAction="#searchHousesEvent" prefHeight="39.0" prefWidth="72.0" style="-fx-font-family: corbel; -fx-background-radius: 7px; -fx-font-size: 12px; -fx-background-color: white; -fx-border-color: darkgrey; -fx-border-radius: 5px" text="Search" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="220.0" />
             <Label layoutX="500.0" layoutY="31.0" prefHeight="20.0" prefWidth="46.0" style="-fx-font-family: corbel; -fx-font-size: 9px;" text="Check out" AnchorPane.bottomAnchor="233.0" AnchorPane.rightAnchor="123.60000000000002">
                <font>
                   <Font size="8.0" />

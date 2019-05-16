@@ -43,22 +43,22 @@ public class LoginRegistrationController extends Controller {
     void handleSubmitButtonAction(ActionEvent event) {
         Window owner = signUp.getScene().getWindow();
         if (username.getText().isEmpty()) {
-            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
+            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form error!",
                     "Please enter your name");
             return;
         }
         if (email.getText().isEmpty()) {
-            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
+            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form error!",
                     "Please enter your email");
             return;
         }
         if (pass.getText().isEmpty()) {
-            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
+            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form error!",
                     "Please enter a password");
             return;
         }
         if (pass.getText().isEmpty()) {
-            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
+            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form error!",
                     "Please reenter a password");
             return;
         }
@@ -69,7 +69,7 @@ public class LoginRegistrationController extends Controller {
             try {
                 BufferedWriter bw = new BufferedWriter(new FileWriter("RegistrationFile", true));
                 String addUser = (username.getText().trim() + ";" + pass.getText().trim() + ";" + email.getText().trim());
-                User user = new User(username.getText().trim(),pass.getText().trim(),email.getText().trim(),false);
+                User user = new User(username.getText().trim(),pass.getText().trim(),email.getText().trim());
                 bw.write(addUser);
                 bw.newLine();
                 bw.close();
@@ -106,7 +106,7 @@ public class LoginRegistrationController extends Controller {
                     String []udaje = line.split(";");
                     if (udaje[0].equals(inputLogin.getText())&&udaje[1].equals(inputPassword.getText())){
                         wrUser = true;
-                        User user = new User(inputLogin.getText(),inputPassword.getText(),udaje[2],false);
+                        User user = new User(inputLogin.getText(),inputPassword.getText(),udaje[2]);
                         br.close();
                         Stage stage = (Stage) login.getScene().getWindow();
                         FXMLLoader loader = new FXMLLoader(getClass().getResource("../account/account.fxml"));
