@@ -1,5 +1,4 @@
 package test;
-
 import org.junit.jupiter.api.Test;
 import sample.Functions;
 import sample.booking.BookingController;

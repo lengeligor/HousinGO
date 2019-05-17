@@ -29,7 +29,7 @@ public class Functions {
             controller.setUser(user);
             stage.setTitle(title);
             stage.getIcons().add(new javafx.scene.image.Image("sample/img/icon.png"));
-            stage.setScene(new Scene(root, stage.getWidth(), stage.getHeight()));
+            stage.setScene(new Scene(root, stage.getScene().getWidth(), stage.getScene().getHeight()));
             stage.setMinWidth(720);
             stage.setMinHeight(480);
             stage.setResizable(true);
